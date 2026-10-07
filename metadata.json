@@ -1,0 +1,6 @@
+{
+  "name": "APEX — The F1 Racing Journal",
+  "description": "Where speed meets strategy. An independent Formula 1 digital magazine dedicated to race analysis, technical aerodynamics, driver profiles, and motorsport culture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
