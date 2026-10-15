@@ -53,10 +53,17 @@ export interface Article {
 
 export const GENERATED_IMAGES = {
   heroCar: '/src/assets/images/f1_hero_crimson_car_1791343034394.jpg',
+  heroNight: '/src/assets/images/f1_hero_car_night_1792033961914.jpg',
   pitStop: '/src/assets/images/f1_pit_stop_action_1791343054820.jpg',
   aeroTunnel: '/src/assets/images/f1_aero_wind_tunnel_1791343067774.jpg',
   driverPortrait: '/src/assets/images/f1_driver_portrait_leclerc_1791343081876.jpg',
+  driverHelmet: '/src/assets/images/f1_driver_helmet_close_1792034474860.jpg',
   circuitMonza: '/src/assets/images/f1_circuit_monza_aerial_1791343096326.jpg',
+  duelTrack: '/src/assets/images/f1_duel_rivalry_track_1792034013336.jpg',
+  telemetryScreens: '/src/assets/images/f1_telemetry_control_screen_1792033962458.jpg',
+  kartingJunior: '/src/assets/images/f1_karting_junior_circuit_1792033964168.jpg',
+  futureEngine: '/src/assets/images/f1_future_concept_powerunit_1792033964766.jpg',
+  qualifyingMonaco: '/src/assets/images/f1_qualifying_monaco_action_1792034014653.jpg',
 };
 
 export const ARTICLES: Article[] = [
@@ -216,8 +223,8 @@ export const ARTICLES: Article[] = [
     },
     date: 'September 2026',
     readingTime: '10 min read',
-    heroImage: GENERATED_IMAGES.driverPortrait,
-    heroCaption: 'Fig 3.1 — The solitude of the garage moments before qualifying: where psychological warfare begins.',
+    heroImage: GENERATED_IMAGES.duelTrack,
+    heroCaption: 'Fig 3.1 — Classic wheel-to-wheel combat under braking: where the margins between victory and heartbreak are measured in inches.',
     excerpt: 'Formula 1 is the only team sport on Earth where your closest colleague in the garage is the first person you must defeat to become immortal.',
     featured: false,
     keyTakeaways: [
@@ -284,8 +291,8 @@ export const ARTICLES: Article[] = [
     },
     date: 'September 2026',
     readingTime: '8 min read',
-    heroImage: GENERATED_IMAGES.driverPortrait,
-    heroCaption: 'Fig 4.1 — Pre-session cognitive priming and hydration equilibrium protocol 45 minutes prior to pit lane opening.',
+    heroImage: GENERATED_IMAGES.driverHelmet,
+    heroCaption: 'Fig 4.1 — Intense focus inside the cockpit as the helmet is secured: where neuro-visual priming meets 5.5G physiological reality.',
     excerpt: 'An F1 driver loses up to 3.8 kilograms of fluid in ninety minutes at Singapore while pressing a brake pedal with 145 kg of deadlift force eighty times per hour.',
     featured: false,
     keyTakeaways: [
@@ -421,8 +428,8 @@ export const ARTICLES: Article[] = [
     },
     date: 'August 2026',
     readingTime: '8 min read',
-    heroImage: GENERATED_IMAGES.circuitMonza,
-    heroCaption: 'Fig 6.1 — Slipstream towing choreography down the main straight during the final seconds of Q3.',
+    heroImage: GENERATED_IMAGES.qualifyingMonaco,
+    heroCaption: 'Fig 6.1 — Grazing the Armco barriers at 270 km/h: extracting every thousandth of a second on Saturday afternoon.',
     excerpt: 'With the entire twenty-car field frequently separated by less than nine-tenths of a second in Q1, a single micro-lockup or mistimed out-lap ruins an entire Grand Prix weekend.',
     featured: false,
     keyTakeaways: [
@@ -557,8 +564,8 @@ export const ARTICLES: Article[] = [
     },
     date: 'July 2026',
     readingTime: '9 min read',
-    heroImage: GENERATED_IMAGES.aeroTunnel,
-    heroCaption: 'Fig 8.1 — Real-time aerodynamic pressure tap arrays correlating trackside Pitot rakes with factory CFD models.',
+    heroImage: GENERATED_IMAGES.telemetryScreens,
+    heroCaption: 'Fig 8.1 — Live telemetry command wall tracking 1,500 real-time sensor streams and tyre thermal decay curves.',
     excerpt: 'Every millisecond a Formula 1 car is on track, 300 sensors stream 1,500 channels of encrypted telemetry from the cockpit to engineers 5,000 miles away.',
     featured: false,
     keyTakeaways: [
@@ -626,8 +633,8 @@ export const ARTICLES: Article[] = [
     },
     date: 'June 2026',
     readingTime: '9 min read',
-    heroImage: GENERATED_IMAGES.driverPortrait,
-    heroCaption: 'Fig 9.1 — Fewer than 0.02% of competitive international karting licence holders ever start a Formula 1 Grand Prix.',
+    heroImage: GENERATED_IMAGES.kartingJunior,
+    heroCaption: 'Fig 9.1 — Wheel-to-wheel battles in cadet karting: where future champions master wet-weather slide control and racecraft.',
     excerpt: 'The climb from an eight-year-old in a 60cc cadet kart at Lonato to a Formula 1 grid slot requires roughly €8 million in backing, 40 Super Licence points, and zero off-seasons.',
     featured: false,
     keyTakeaways: [
@@ -694,8 +701,8 @@ export const ARTICLES: Article[] = [
     },
     date: 'June 2026',
     readingTime: '10 min read',
-    heroImage: GENERATED_IMAGES.heroCar,
-    heroCaption: 'Fig 10.1 — Next-generation active aerodynamic chassis testing with 350 kW MGU-K electrical deployment.',
+    heroImage: GENERATED_IMAGES.futureEngine,
+    heroCaption: 'Fig 10.1 — Next-generation active aerodynamic power unit testing with 350 kW MGU-K electrical deployment on precision dyno.',
     excerpt: 'Formula 1 is rewriting the laws of hybrid propulsion and active aerodynamics—combining a 350 kW electric motor with carbon-neutral synthetic e-fuels and movable front and rear wings.',
     featured: false,
     keyTakeaways: [

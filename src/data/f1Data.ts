@@ -115,7 +115,7 @@ export const DRIVERS: Driver[] = [
     fastestLaps: 5,
     avgQualifying: '1.8',
     avgFinish: '2.4',
-    portrait: GENERATED_IMAGES.driverPortrait,
+    portrait: GENERATED_IMAGES.apexDriver,
     bio: 'Renowned for transcendent single-lap qualifying speed and surgical late-braking racecraft, the Monegasque spearheads the crimson championship charge.'
   },
   {
@@ -136,7 +136,7 @@ export const DRIVERS: Driver[] = [
     fastestLaps: 4,
     avgQualifying: '2.3',
     avgFinish: '2.7',
-    portrait: GENERATED_IMAGES.heroCar,
+    portrait: GENERATED_IMAGES.rearWing,
     bio: 'A relentless metronome in variable grip conditions with unmatched capacity to manage tyre degradation while operating on a razor-thin front-end balance.'
   },
   {
@@ -178,7 +178,7 @@ export const DRIVERS: Driver[] = [
     fastestLaps: 3,
     avgQualifying: '4.1',
     avgFinish: '3.6',
-    portrait: GENERATED_IMAGES.driverPortrait,
+    portrait: GENERATED_IMAGES.apexDriver,
     bio: 'Seven-time World Champion bringing unmatched Sunday race reading, wet-weather touch, and strategic tyre preservation to the Italian stable.'
   },
   {

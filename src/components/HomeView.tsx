@@ -58,26 +58,26 @@ export const HomeView: React.FC<HomeViewProps> = ({
   return (
     <div className="bg-[#080808] text-[#F5F5F0]">
       {/* 1. Full-Screen Cinematic Hero Section */}
-      <section className="relative min-h-[82vh] flex items-end overflow-hidden border-b border-white/15">
+      <section className="relative min-h-[560px] sm:min-h-[70vh] lg:min-h-[82vh] flex items-end overflow-hidden border-b border-white/15 bg-[#080808]">
         {/* Background Hero Image with Measured Dark & Crimson Scrim */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 pointer-events-none z-0">
           <SafeImage
             src={GENERATED_IMAGES.heroCar}
             alt="APEX Formula 1 crimson race car speeding through corner with sparks"
-            className="w-full h-full"
+            className="w-full h-full object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/65 to-black/40" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#080808] via-[#080808]/60 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#080808] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/75 to-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#080808] via-[#080808]/70 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#080808] to-transparent" />
         </div>
 
         {/* Hero Editorial Content */}
-        <div className="relative z-10 max-w-[1380px] w-full mx-auto px-4 sm:px-8 pt-28 pb-16 lg:pb-24">
+        <div className="relative z-10 max-w-[1380px] w-full mx-auto px-4 sm:px-8 pt-20 sm:pt-28 pb-12 sm:pb-16 lg:pb-24">
           <div className="max-w-3xl">
             {/* Brand Journal Kicker */}
-            <div className="flex items-center gap-2.5 text-xs sm:text-sm font-mono-tabular text-[#F5F5F0] mb-4">
-              <span className="w-2 h-2 bg-[#E10600] inline-block" />
+            <div className="flex items-center gap-2 text-xs sm:text-sm font-mono-tabular text-[#F5F5F0] mb-3 sm:mb-4">
+              <span className="w-2 h-2 bg-[#E10600] inline-block shrink-0" />
               <span className="font-bold tracking-widest text-[#E10600]">APEX</span>
               <span aria-hidden="true" className="text-white/30">—</span>
               <span className="tracking-wider uppercase text-[#F5F5F0]">The F1 Racing Journal</span>
@@ -87,25 +87,25 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
             {/* Dominant Display Headline */}
             <h1
-              className="text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tight text-[#F5F5F0] uppercase leading-[1.03]"
+              className="text-3xl sm:text-5xl lg:text-7xl font-display font-extrabold tracking-tight text-[#F5F5F0] uppercase leading-[1.08] sm:leading-[1.03]"
               style={{ textWrap: 'balance' }}
             >
               THE ART OF GOING FASTER.
             </h1>
 
             {/* Subtext */}
-            <p className="mt-6 text-lg sm:text-xl text-[#F5F5F0]/85 leading-relaxed max-w-2xl">
+            <p className="mt-4 sm:mt-6 text-base sm:text-xl text-[#F5F5F0]/85 leading-relaxed max-w-2xl">
               Race weekends, rivalries, strategy, technology and the stories behind Formula 1.
             </p>
 
             {/* Single Dominant Primary CTA */}
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <button
                 onClick={() => {
                   const el = document.getElementById('featured-editorial-grid');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="px-7 py-3.5 text-xs sm:text-sm font-mono-tabular font-semibold tracking-wider uppercase bg-[#E10600] hover:bg-[#B00000] text-[#F5F5F0] transition-colors inline-flex items-center gap-2.5 whitespace-nowrap"
+                className="px-6 sm:px-7 py-3 sm:py-3.5 text-xs sm:text-sm font-mono-tabular font-semibold tracking-wider uppercase bg-[#E10600] hover:bg-[#B00000] text-[#F5F5F0] transition-colors inline-flex items-center justify-center gap-2.5 whitespace-nowrap"
               >
                 <span>EXPLORE THE LATEST</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -113,7 +113,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
               <button
                 onClick={() => onSelectArticle(leadArticle)}
-                className="px-6 py-3.5 text-xs sm:text-sm font-mono-tabular tracking-wider uppercase bg-[#151515]/90 hover:bg-white/10 text-[#F5F5F0] border border-white/20 transition-colors whitespace-nowrap"
+                className="px-5 sm:px-6 py-3 sm:py-3.5 text-xs sm:text-sm font-mono-tabular tracking-wider uppercase bg-[#151515]/90 hover:bg-white/10 text-[#F5F5F0] border border-white/20 transition-colors text-center whitespace-nowrap"
               >
                 READ COVER STORY: STRATEGY WARS
               </button>
